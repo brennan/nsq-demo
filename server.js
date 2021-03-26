@@ -4,7 +4,7 @@ const app = express()
 const port = 3000
 
 const reader = new nsq.Reader('test', 'test', {
-  nsqdTCPAddresses: 'localhost:4150'
+  lookupdHTTPAddresses: 'localhost:4161'
 })
 
 reader.connect()
